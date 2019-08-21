@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>将文件进行直接专用无损解压缩</h1>
+<form action="#" th:action="@{/pufDemo/download}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="file" name="file" />
+    <input type="submit" value="上传">
+</form>
+</body>
+</html>

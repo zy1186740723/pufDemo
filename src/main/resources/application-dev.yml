@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /pufDemo
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/pufdemo?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  ##redis配置
+  data:
+    mongodb:
+      host: 119.23.11.21
+      port: 27017
+      database: userInfo
+
+

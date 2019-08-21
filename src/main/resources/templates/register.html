@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>用户进行信息注册</h1>
+<li>将对银行卡字段进行间接加密</li>
+<form action="#" th:action="@{/user/registerForm}" th:object="${form}" method="post">
+    <p>姓名: <input type="text" th:field="*{username}" /></p>
+    <p>银行卡号: <input type="text" th:field="*{carId}" /></p>
+    <p>身份证: <input type="text" th:field="*{userId}" /></p>
+    <p>电话号码 <input type="text" th:field="*{phoneNumber}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
